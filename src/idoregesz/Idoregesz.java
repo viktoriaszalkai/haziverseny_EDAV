@@ -13,7 +13,8 @@ public class Idoregesz extends javax.swing.JFrame {
     String leiras02= "Napfényes mezőn állsz. Nyugatra egy hatalmas kastélyt, délre egy kutat látsz.";
     String leiras03= "Napfényes mezőn állsz, egy kút előtt. Itt van: pénz. Nyugatra egy hatalmas kastélyt látsz.";
     String leiras04= "Rendben, a pénzt elraktad.";
-    String leiras05= "A várudvaron állsz. Nyugatra nyitott kamrát, északra zárt ajtót látsz. Egy széles lépcső vezet fel a vártemplomhoz.";
+    String leiras05= "A várudvaron állsz. Nyugatra nyitott kamrát, északra zárt ajtót látsz. "
+            + "Egy széles lépcső vezet fel a vártemplomhoz.";
     String leiras06= "A templom előtt egy kéregető szerzetes mosolyog rád. Nyugatra nyitott kamrát, északra zárt ajtót látsz.";
     String leiras07= "A szerzetes megköszöni, és kinyújtja feléd a kezét, a tenyerén egy kulcsot tart.";
     String leiras08= "Rendben, a kulcsot elraktad.";
@@ -31,7 +32,7 @@ public class Idoregesz extends javax.swing.JFrame {
     ImageIcon kamra = new ImageIcon("C:\\Users\\vikis\\OneDrive\\Asztali gép\\idoregesz\\haziverseny_EDAV\\src\\kepek\\Kamra.png");
     ImageIcon ajto1 = new ImageIcon("C:\\Users\\vikis\\OneDrive\\Asztali gép\\idoregesz\\haziverseny_EDAV\\src\\kepek\\09_kamra.png");
     ImageIcon ajto2 = new ImageIcon("C:\\Users\\vikis\\OneDrive\\Asztali gép\\idoregesz\\haziverseny_EDAV\\src\\kepek\\14_ajto.png");
-    ImageIcon szerzetes = new ImageIcon("C:\\Users\\vikis\\OneDrive\\Asztali gép\\idoregesz\\haziverseny_EDAV\\src\\kepek\\06_szerzetes2.png");
+    ImageIcon szerzetes = new ImageIcon("C:\\Users\\vikis\\OneDrive\\Asztali gép\\idoregesz\\haziverseny_EDAV\\src\\kepek\\06_szerzetes2.jpg");
     ImageIcon kut = new ImageIcon("C:\\Users\\vikis\\OneDrive\\Asztali gép\\idoregesz\\haziverseny_EDAV\\src\\kepek\\03_kut2.png");
     public Idoregesz() {
         initComponents();
@@ -69,16 +70,18 @@ public class Idoregesz extends javax.swing.JFrame {
         lblKep.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/01_kezdes.png"))); // NOI18N
         lblKep.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        lblEro.setFont(new java.awt.Font("Serif", 3, 14)); // NOI18N
+        lblEro.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblEro.setText("Erő:");
 
-        lblEroMennyiseg.setFont(new java.awt.Font("Serif", 3, 14)); // NOI18N
+        lblEroMennyiseg.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblEroMennyiseg.setText("5");
 
         lblIranytu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/Képernyőkép 2023-12-13 131939.png"))); // NOI18N
         lblIranytu.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        lblFelszerelesNev.setFont(new java.awt.Font("Serif", 3, 14)); // NOI18N
+        lblFelszereles.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+
+        lblFelszerelesNev.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblFelszerelesNev.setText("Felszerelés:");
 
         javax.swing.GroupLayout pnlHatterLayout = new javax.swing.GroupLayout(pnlHatter);
@@ -98,7 +101,7 @@ public class Idoregesz extends javax.swing.JFrame {
                         .addComponent(lblIranytu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lblFelszereles, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(lblFelszerelesNev))
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlHatterLayout.setVerticalGroup(
             pnlHatterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -125,16 +128,16 @@ public class Idoregesz extends javax.swing.JFrame {
 
         txtaSzoveg.setEditable(false);
         txtaSzoveg.setColumns(20);
-        txtaSzoveg.setFont(new java.awt.Font("Serif", 3, 18)); // NOI18N
+        txtaSzoveg.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         txtaSzoveg.setRows(5);
         txtaSzoveg.setText("Egy óriási mezőn vagy. Nyugat felé egy hatalmas épület körvonalai tűnnek fel.\n");
         txtaSzoveg.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jScrollPane1.setViewportView(txtaSzoveg);
 
-        txtfInput.setFont(new java.awt.Font("Serif", 3, 18)); // NOI18N
+        txtfInput.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         txtfInput.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        btnEnter.setFont(new java.awt.Font("Serif", 3, 18)); // NOI18N
+        btnEnter.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnEnter.setText("Enter");
         btnEnter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
